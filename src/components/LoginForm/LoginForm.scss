@@ -1,0 +1,21 @@
+@import "./../../theme/variables";
+
+.forgotLink {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+.submitBtn {
+  button {
+    background-color: $theme-clr;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(208, 208, 208, 0.5);
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    height: 59px;
+    width: 100%;
+  }
+}
+form {
+  margin-top: 30px;
+}

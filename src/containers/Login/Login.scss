@@ -1,0 +1,66 @@
+@import "./../../theme/variables";
+
+.loginPage {
+  background: #FFF;
+  color: $theme-text-clr;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  .loginForm {
+    margin: auto;
+    margin-top: 10px;
+    text-align: left;
+    width: 425px;
+    .loginBody {
+      background-color: $primary-bg-clr;
+      // height: 322px;
+      padding: 20px;
+    }
+    h2 {
+      color: $btn-teal-bg;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .form-group {
+      min-height: 60px;
+    }
+    .registerLink {
+      font-size: 0.9em;
+      padding-left: 0;
+      padding-right: 0;
+      div {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .forgotLink {
+      padding-left: 10px;
+      padding-right: 0px;
+    }
+    .submitBtn {
+      button {
+        background-color: $theme-clr;
+        border-radius: 8px;
+        box-shadow: 0 1px 1px rgba(208, 208, 208, 0.5);
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+        height: 59px;
+        width: 100%;
+      }
+    }
+  }
+  form {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .loginPage {
+    .loginForm {
+      width: 75%;
+    }
+  }
+}

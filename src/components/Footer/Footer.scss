@@ -1,0 +1,104 @@
+@import "./../../theme/variables";
+
+.footerSection{
+  .authFooter {
+    color: $theme-text-clr;
+    background-color: #f8f8f8;
+    height: 60px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 25px 0;
+    .pad_0 {
+      padding-right: 0;
+    }
+  }
+  .footer {
+    background-color: $theme-clr;
+    color: $white;
+    height: 161px;
+    padding: 35px 0px;
+    width: 100%;
+    .footerMenu {
+      border-right: 1px solid $white;
+      font-weight: 600;
+      text-align: center;
+    }
+    .whiteColor {
+      color: $white
+    }
+    .email {
+      border-right: 1px solid $white;
+      font-weight: 600;
+      text-align: center;
+    }
+    .twitterIcon {
+      font-size: 20px;
+      padding-left: 10px;
+    }
+    .linkedIcon {
+      font-size: 20px;
+      padding-left: 20px;
+    }
+    .about {
+      font-size: 10px;
+      font-weight: 400;
+      padding-top: 30px;
+      text-align: center;
+    }
+  }
+  .link {
+    cursor: pointer;
+  }
+}
+
+// media queries for footer
+@media (max-width: 760px) {
+  .footerSection {
+    .footer {
+      padding: 20px 0px;
+      .email {
+        border-right: 0px;
+        padding-right: 40px;
+      }
+      .about {
+        padding-top: 10px;
+      }
+    }
+    .authFooter {
+      .pad_0 {
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .footerSection {
+    .footer {
+      font-size: 12px;
+      .linkedIcon {
+        font-size: 15px;
+        padding-left: 15px;
+      }
+      .twitterIcon {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .footerSection {
+    .footer {
+      .twitterIcon {
+        padding-left: 0px;
+      }
+    }
+    .authFooter {
+      .pad_R_0 {
+        padding-left: 5px;
+        padding-left: 5px;
+      }
+    }
+  }
+}

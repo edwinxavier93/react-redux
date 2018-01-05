@@ -1,0 +1,42 @@
+@import "./../../theme/variables";
+
+.headerSection {
+  .topHeader {
+    background-color: $gray-bg-clr;
+    height: 60px;
+    padding: 20px;
+    .headerBar {
+      height: 20px;
+      border-radius: 8px;
+      background-color: $white;
+    }
+  }
+  .brand {
+    cursor: pointer;
+    padding-top: 18px;
+  }
+  .menuSection {
+    border-color: $white !important;
+    color: $theme-text-clr;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+  .userMenu {
+    border-color: $white !important;
+    color: $theme-text-clr;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .login{
+    a {
+      border-bottom: 0 !important;
+      padding-top: 10px;
+    }
+    .loginBtn {
+      border-radius: 100px;
+      background-color: $theme-clr;
+      color: $white;
+      font-weight: 600;
+    }
+  }}

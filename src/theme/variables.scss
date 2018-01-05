@@ -1,0 +1,160 @@
+/**
+ *  Define scss variables here.
+ *
+ *  Available options for Bootstrap:
+ *  http://getbootstrap.com/customize/
+ *
+ */
+
+// Custom Colors
+$cyan: #33e0ff;
+$humility: #777;
+
+/*
+  Overall application theme color
+*/
+$theme-clr: #66ccc7;
+$primary-clr: #66ccc7;
+$primary-bg-clr: #f3f3f3;
+$secondry-bg-clr: #f8f8f8;
+
+$theme-text-clr: #9e9e9e;
+$gray-bg-clr: #f0f0f0;
+$white: #ffffff;
+$black: #000;
+$lit-grey-clr: #929292;
+$dark-gray-clr: #b6b6b6;
+
+$btn-teal-bg: $primary-clr;
+$btn-teal-color: $white;
+$btn-teal-border-color: $primary-clr;
+
+// Bootstrap Variables
+$brand-primary: darken(#428bca, 6.5%);
+$brand-secondary: #e25139;
+$brand-success: #5cb85c;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$brand-info: #5bc0de;
+$red: #ff6d4f;
+$black: #000000;
+$blue: #1284ff;
+
+$text-color: #333;
+
+$font-size-base: 14px;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+
+// Default Theme - Navbar
+$navbar-default-bg:                        $white !default;
+$navbar-border:                            $white !default;
+$navbar-default-link-color:                $theme-text-clr !default;
+$navbar-default-link-hover-color:          $theme-clr !default;
+
+nav {
+  .active {
+    a {
+      border-bottom: 3px solid $theme-clr;
+      color: $theme-text-clr  !important;
+    }
+  }
+}
+
+button:focus, .btn:focus {
+  outline: none !important;
+}
+
+.p-l-r-0 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.error-message {
+  margin: 3px 0;
+  color: $red;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.m-t-25 {
+  margin-top: 25px;
+}
+
+.m-t-45 {
+  margin-top: 45px;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.p-t-40 {
+  padding-top: 40px;
+}
+
+.theme-bg {
+  background-color: $theme-clr;
+}
+
+.blue-bg {
+  background-color: $blue;
+}
+
+.gray-bg {
+  background-color: $dark-gray-clr;
+}
+
+input[type=text], input[type=password]{
+  box-shadow: 0 1px 1px rgba(208, 208, 208, 0.5);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  height: 38px;
+  width: 100%;
+  outline: none;
+  padding: 0 10px;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $theme-text-clr;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $theme-text-clr;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $theme-text-clr;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $theme-text-clr;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,128 @@
+
+@import "../../theme/variables.scss";
+
+.button_group {
+  div:first-child {
+    button {
+      border-radius: 5px 0 0 5px;
+    }
+  }
+  div:last-child {
+    button {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+  button {
+    display: inline-block;
+    margin-right: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+    &.active {
+      background-color: $lit-black;
+      color: $white;
+    }
+    background-color: #f3f4f4;
+    color: #b8b8b8;
+  }
+  button.firstBtn {
+    border-radius: 3px 0 0 3px;
+  }
+  button.lastBtn {
+    border-radius: 0 3px 3px 0;
+    border-right: none;
+  }
+  &:first-child {
+    padding-right: 0;
+    border-right: 1px solid #fef4f4;
+  }
+  &:nth-child(2) {
+    padding: 0;
+    border-right: 1px solid #fef4f4;
+  }
+  &:last-child {
+    padding-left: 0;
+  }
+}
+
+.children_component {
+  label {
+    font-weight: 400;
+  }
+}
+
+.filter {
+  background-color: $white;
+  min-height: calc(100% - 100px);
+  padding: 8px;
+  h2 {
+    border-bottom: 1px solid $lit-border-clr;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    margin-top: 5px;
+    padding-left: 8px;
+    img {
+      display: inline-block;
+      padding-right: 1rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  label {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: $lit-black;
+  }
+  .reset {
+    color: $secondary-theme-color;
+    float: right;
+    font-size: 1.1em;
+    transform: scaleX(-1);
+    margin-right: 10px;
+  }
+}
+
+.searchBox {
+  position: relative;
+  .iconSearch {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    right: 0px;
+  }
+  .iconClear {
+    position: absolute;
+    padding: 10px;
+    right: 0px;
+    &:hover {
+      color: $red;
+    }
+    i {
+      cursor: pointer;
+    }
+  }
+  input {
+    padding-right: 30px;
+  }
+}
+
+.customerSearchBox {
+  @extend .searchBox;
+  padding-top: 10px;
+  width: 445px;
+  input {
+    border-radius: 6px;
+    height: 40px;
+  }
+}
+
+.fa_disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
